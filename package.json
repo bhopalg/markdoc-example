@@ -6,17 +6,32 @@
     "start": "next start"
   },
   "dependencies": {
-    "@markdoc/markdoc": "latest",
-    "@markdoc/next.js": "latest",
-    "next": "latest",
-    "prismjs": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+    "@headlessui/react": "^1.7.7",
+    "@heroicons/react": "^2.0.13",
+    "@markdoc/markdoc": "^0.2.1",
+    "@markdoc/next.js": "^0.2.1",
+    "classnames": "^2.3.2",
+    "next": "^13.1.1",
+    "prismjs": "^1.29.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "typescript": "latest"
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "@typescript-eslint/parser": "^5.48.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.4.20",
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.4"
   }
 }

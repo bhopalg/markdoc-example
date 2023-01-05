@@ -11,8 +11,8 @@ export function TableOfContents({toc}) {
   }
 
   return (
-    <nav className="toc">
-      <ul className="flex column">
+    <nav className="col-span-1">
+      <ul className="">
         {items.map((item) => {
           const href = `#${item.id}`;
           const active =
@@ -34,38 +34,6 @@ export function TableOfContents({toc}) {
           );
         })}
       </ul>
-      <style jsx>
-        {`
-          nav {
-            position: sticky;
-            top: calc(2.5rem + var(--top-nav-height));
-            max-height: calc(100vh - var(--top-nav-height));
-            flex: 0 0 auto;
-            align-self: flex-start;
-            margin-bottom: 1rem;
-            padding: 0.5rem 0 0;
-            border-left: 1px solid var(--border-color);
-          }
-          ul {
-            margin: 0;
-            padding: 0 1.5rem;
-          }
-          li {
-            list-style-type: none;
-            margin: 0 0 1rem;
-          }
-          li :global(a) {
-            text-decoration: none;
-          }
-          li :global(a:hover),
-          li.active :global(a) {
-            text-decoration: underline;
-          }
-          li.padded {
-            padding-left: 1rem;
-          }
-        `}
-      </style>
     </nav>
   );
 }
